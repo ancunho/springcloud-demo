@@ -50,4 +50,10 @@ public class User implements Serializable {
                 .add("id", getId())
                 .add("nickname", getNickname()).toString();
     }
+
+    protected MoreObjects.ToStringHelper toStringHelper() {
+        return MoreObjects.toStringHelper(this)
+                .add("id", getId())
+                .add("nickname", getNickname());
+    }
 }
