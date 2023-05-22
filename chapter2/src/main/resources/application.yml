@@ -1,0 +1,11 @@
+
+spring:
+  profiles:
+    active: peer1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: env

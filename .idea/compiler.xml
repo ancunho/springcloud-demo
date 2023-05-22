@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hello-consumer" />
         <module name="demo" />
-        <module name="service-discovery" />
+        <module name="chapter2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="chapter2" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="hello-consumer" target="1.8" />
       <module name="hellocloud" target="1.8" />
@@ -21,6 +21,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="chapter2" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="hello-consumer" options="-parameters" />
       <module name="hellocloud" options="-parameters" />

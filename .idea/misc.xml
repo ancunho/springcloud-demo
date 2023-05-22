@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/hellocloud/hello-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/hellocloud/service-discovery/pom.xml" />
         <option value="$PROJECT_DIR$/hellocloud/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter2/pom.xml" />
       </list>
     </option>
   </component>
