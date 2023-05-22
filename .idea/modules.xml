@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hellocloud/hello-consumer/hello-consumer.iml" filepath="$PROJECT_DIR$/hellocloud/hello-consumer/hello-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hellocloud/parent/parent.iml" filepath="$PROJECT_DIR$/hellocloud/parent/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hellocloud/service-discovery/service-discovery.iml" filepath="$PROJECT_DIR$/hellocloud/service-discovery/service-discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springcloud.iml" filepath="$PROJECT_DIR$/.idea/springcloud.iml" />
     </modules>
   </component>

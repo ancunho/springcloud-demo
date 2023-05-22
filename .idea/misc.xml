@@ -4,6 +4,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/hellocloud/pom.xml" />
+        <option value="$PROJECT_DIR$/hellocloud/hello-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/hellocloud/service-discovery/pom.xml" />
+        <option value="$PROJECT_DIR$/hellocloud/parent/pom.xml" />
       </list>
     </option>
   </component>
