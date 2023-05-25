@@ -65,7 +65,7 @@
                     // 提交请求体
                     data : JSON.stringify(account),
                     success :  function(result, status, xhr) {
-                        console.log(xhr);
+                        console.log(result,status,xhr);
                         // 获取响应码
                         var status = xhr.status;
                         // 获取响应头消息
@@ -79,6 +79,9 @@
                             alert("success："+success + "， message：" + message);
                         }
                     }
+                    // success: function(res) {
+                    //     console.log(res);
+                    // }
                 });
             }
             post2();

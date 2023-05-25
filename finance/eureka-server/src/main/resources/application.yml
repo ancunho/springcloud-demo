@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: eureka-server
+  profiles:
+    active: peer1
+
+#server:
+#  port: 5001
+
+eureka:
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:5001/eureka/,http://localhost:5002/eureka/
+  instance:
+    hostname: localhost

@@ -2,6 +2,7 @@ package io.buza.chapter2.controller;
 
 
 import io.buza.chapter2.pojo.Account;
+import io.buza.chapter2.response.util.ResponseUtils;
 import io.buza.chapter2.vo.ResultMessage;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -48,36 +49,22 @@ public class AccountController {
     @PostMapping("/account2") // POST请求
     @ResponseBody
     public ResponseEntity<Account> createAccount2(@RequestBody Account account) {
-        ResponseEntity<Account> response = null;
-        HttpStatus status = null;
-        // 响应头
-        HttpHeaders headers = new HttpHeaders();
         // 异常标志
         boolean exFlag = false;
         try {
-            long id = (long)(10000.0*Math.random());
+            long id = (long) (10000.0 * Math.random());
             account.setId(id);
             // 测试时可自己加入异常测试异常情况
             throw new RuntimeException();
-        } catch(Exception ex) {
+        } catch (Exception ex) {
             // 设置异常标志为true
             exFlag = true;
         }
-        if (exFlag) { // 异常处理
-            // 加入请求头消息
-            headers.add("message", "create account error，plz check ur input!!");
-            headers.add("success", "false");
-            // 设置状态码（200-请求成功）
-            status = HttpStatus.OK;
-        } else { // 创建资源成功处理
-            // 加入请求头消息
-            headers.add("message", "create account success!!");
-            headers.add("success", "true");
-            // 设置状态码（201-创建资源成功）
-            status = HttpStatus.CREATED;
-        }
-        // 创建应答实体对象返回
-        return new ResponseEntity<Account>(account, headers, status);
+        return exFlag ?
+                ResponseUtils.generateResponseEntity(account, // 异常处理
+                        HttpStatus.OK, false, "create account error,plz check ur input!!") :
+                ResponseUtils.generateResponseEntity(account, // 正常返回
+                        HttpStatus.CREATED, true, "create account success!!");
     }
 
 }

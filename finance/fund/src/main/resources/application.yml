@@ -1,0 +1,17 @@
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5001/eureka/,http://localhost:5002/eureka/
+  instance:
+    hostname: localhost
+
+#server:
+#  port: 7001
+
+spring:
+  application:
+    name: fund
+  profiles:
+    active: peer1

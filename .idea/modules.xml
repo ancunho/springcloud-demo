@@ -3,8 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/chapter2/chapter2.iml" filepath="$PROJECT_DIR$/chapter2/chapter2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finance/common/common.iml" filepath="$PROJECT_DIR$/finance/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finance/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/finance/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finance/finance.iml" filepath="$PROJECT_DIR$/finance/finance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finance/fund/fund.iml" filepath="$PROJECT_DIR$/finance/fund/fund.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finance/product/product.iml" filepath="$PROJECT_DIR$/finance/product/product.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springcloud.iml" filepath="$PROJECT_DIR$/.idea/springcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finance/user/user.iml" filepath="$PROJECT_DIR$/finance/user/user.iml" />
     </modules>
   </component>
 </project>
